@@ -1,4 +1,4 @@
-# Regular Expression Validator
+# Regular Expression Validator - _Junit Testing_
 
 ## Overview
 This project implements regular expressions to validate various types of data, including Social Security Numbers, phone numbers, emails, names, dates, addresses, and more. Each validation function uses regular expressions, supplemented by additional logic where necessary. The project also includes unit tests to ensure correctness and edge case handling.
