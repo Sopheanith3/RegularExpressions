@@ -1,23 +1,30 @@
-Sopheanith Ny - Individual Assignment - Regular Expressions
+# Regular Expression Validator
 
-Overview/Shortcoming:
+## Overview
+This project implements regular expressions to validate various types of data, including Social Security Numbers, phone numbers, emails, names, dates, addresses, and more. Each validation function uses regular expressions, supplemented by additional logic where necessary. The project also includes unit tests to ensure correctness and edge case handling.
 
-This project implements regular expression to validate various types of information. 
-Throghtout this project I have collaborate with Lwazi and I have used two of his test are the password test 
-and the containing the odd numbers. For the extra credit I have complete all the extra credit as you can see in the pdf that 
-I have attached it. 
+## Features
+The following validations are implemented:
+- **Social Security Number (SSN)**: Supports multiple formats (with dashes, spaces, or no spaces) and ensures validity based on SSA numbering rules (extra credit).
+- **US Phone Number**: Accepts numbers with optional parentheses and dashes, validating only official area codes (extra credit).
+- **Email Address**: Validates standard email formats.
+- **Name on a Class Roster**: Supports names in the format `Last, First MI`.
+- **Date (MM-DD-YYYY or MM/DD/YYYY)**: Ensures valid dates, including leap years.
+- **House Address**: Supports standard street numbers, names, and abbreviations for road types.
+- **City, State, ZIP Code**: Ensures proper formatting, with state abbreviation validation (extra credit).
+- **Military Time**: Ensures valid 24-hour time format without colons.
+- **US Currency**: Supports dollar amounts down to the penny, with commas where appropriate.
+- **URL Validation**: Accepts `http://` or `https://`, case-insensitive.
+- **Password Validation**: Requires at least 10 characters, including uppercase, lowercase, digit, punctuation, and prevents more than three consecutive lowercase characters.
+- **Odd-Length Words Ending in "ion"**: Matches words with an odd number of letters that end in `-ion`.
 
-The shortcoming thorughtout this project is that I am struggling with getting the password the most where I didn't 
-get the strong password to pass (e.g. Secure!Pass@12). The way I fixed it I add a regex where it prevent two two duplicate characters. 
-Overall, everything is good now and fix. 
+## Installation
+### **Prerequisites**
+- Java Development Kit (JDK) 8+
+- JUnit (for running unit tests)
+- Git (for cloning the repository)
 
-Extra Credit: 
-1. SSN - 2 points Extra credit if you make sure the SSN is allowable based on numbering rules by the Social Security Administration
-2. Phone Number - 2 points Extra credit if you allow only official area codes
-3. City - 2 points extra credit if you make sure the 2 character state abbreviation (e.g. WA) is valid
-
-Credit: 
--Lwazi
--stackoverflow
--https://www.geeksforgeeks.org/write-regular-expressions/
-https://www.rexegg.com/regex-lookarounds.php
+### **Cloning the Repository**
+```sh
+git clone https://github.com/yourusername/regex-validator.git
+cd regex-validator
